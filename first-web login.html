@@ -31,15 +31,30 @@
             </div>
             <div class="cen-cen">
                 <form class="login-form">
-                    <input type="text" class="id" placeholder="USER ID">
-                    <input type="password" class="pw" placeholder="PASSWORD">
-                    <button type="submit" class="login-btn">LOGIN</button>
+                    <input type="text" id="id" placeholder="USER ID">
+                    <input type="password" id="pw" placeholder="PASSWORD">
+                    <button type="submit" id="login-btn" onclick="tyrLogin()">LOGIN</button>
                 </form>
             </div>
             <div class="cen-right"></div>
         </div>
     </div>
+    <script>
+        document.querySelector ('#id').addEventListener('keydown',
+        (event) =>{
+            if(event.keyCode == 13){
+                document.querySelector('#pw').focus();
+                console.log('확인');
+            }
+        });
 
+        document.querySelector ('#pw').addEventListener('keydown',
+        (e) =>{
+            if(event.keyCode == 13){
+                tyrLogin();
+            }
+        });
+    </script>
 </body>
 
 </html>

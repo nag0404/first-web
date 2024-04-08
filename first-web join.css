@@ -9,7 +9,6 @@
 }
 
 .banner {
-    border: 1px solid black;
     width: 100%;
     height: 150px;
     display: flex;
@@ -29,7 +28,6 @@ a {text-decoration: none; color: black;}
 }
 
 .right-box {
-    border: 1px solid black;
     width: 100%;
     height: 40px;
     display: flex;
@@ -55,14 +53,12 @@ a {text-decoration: none; color: black;}
 
 .cen {
     margin-top: 20px;
-    border: 1px solid black;
     width: 100%;
     height: 800px;
     display: flex;
 }
 
 .cen-left {
-    border: 1px solid black;
     width: 15%;
     height: 100%;
     display: flex;
@@ -75,7 +71,6 @@ a {text-decoration: none; color: black;}
 }
 
 .cen-cen {
-    border: 1px solid black;
     width: 70%;
     height: 100%;
 }
@@ -85,7 +80,6 @@ a {text-decoration: none; color: black;}
 }
 
 .cen-right {
-    border: 1px solid black;
     width: 15%;
     height: 100%;
 }
