@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .menu1,
+        .menu2,
+        .menu3 {
+            display: flex;
+            width: 300px;
+        }
+
+        .menu1 li,
+        .menu2 li,
+        .menu3 li,
+        .submenu-container li{
+            border: 1px solid black;
+            width: 100px;
+            height: 30px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-container1,
+        .nav-container2,
+        .nav-container3 {
+            margin: 20px;
+        }
+
+        .menutitle {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        /* 
+            화면에 안보이게 하다가 보이게 하기
+            1. overflow:hidden -> visible
+            2. display:none -> block or inline 등등
+            3. width:0 or height:0 -> 각자 자기 사이즈
+            4. visibility: hidden -> visible 도 있으나,
+                            이부분은 영역을 차지하기 때문에 fixed나 absolute 인 경우 고려해서 사용
+        */
+        /* 메뉴 전체 한번에 표시*/
+        /*
+        .menu1 {
+            overflow: hidden;
+        }
+
+        
+        .menu1:hover  {
+            overflow: visible;
+        }
+        */
+
+        /* 메뉴별 각자 표시*/
+        .menu1>li {
+            overflow: hidden;
+        }
+
+        .menu1>li:hover {
+            overflow: visible;
+        }
+
+        .submenu li:hover,
+        .submenu-container li:hover {
+            color: red;
+        }
+
+        /* display 방식 */
+        div.submenu {
+            display: none;
+        }
+
+        /*
+        .menu2 > li:hover div.submenu {
+            display: block;
+        }
+        */
+
+        .menu2:hover .submenu{
+            display: block;
+        }
+
+        /* height 조정 방식 */
+        .submenu-container {
+            width: 100%;
+            display: flex;
+            height:0px;
+            overflow: hidden;
+            transition-property: height;
+            transition-duration: 0.2s;
+        }
+
+        .menu3:hover ~ .submenu-container, .submenu-container:hover{
+            height:150px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class='nav'>
+        <div class="nav-container1">
+            <ul class="menu1">
+                <li>
+                    <p class="menutitle">메뉴1</p>
+                    <ul class="submenu">
+                        <li>서브메뉴1</li>
+                        <li>서브메뉴2</li>
+                        <li>서브메뉴3</li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="menutitle">메뉴2</p>
+                    <ul class="submenu">
+                        <li>서브메뉴1</li>
+                        <li>서브메뉴2</li>
+                        <li>서브메뉴3</li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="menutitle">메뉴3</p>
+                    <ul class="submenu">
+                        <li>서브메뉴1</li>
+                        <li>서브메뉴2</li>
+                        <li>서브메뉴3</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav-container2">
+            <ul class="menu2">
+                <li>
+                    <p class="menutitle">메뉴1</p>
+                    <div class="submenu">
+                        <ul>
+                            <li>서브메뉴1</li>
+                            <li>서브메뉴2</li>
+                            <li>서브메뉴3</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <p class="menutitle">메뉴2</p>
+                    <div class="submenu">
+                        <ul>
+                            <li>서브메뉴1</li>
+                            <li>서브메뉴2</li>
+                            <li>서브메뉴3</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <p class="menutitle">메뉴3</p>
+                    <div class="submenu">
+                        <ul>
+                            <li>서브메뉴1</li>
+                            <li>서브메뉴2</li>
+                            <li>서브메뉴3</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav-container3">
+            <ul class="menu3">
+                <li>메뉴1</li>
+                <li>메뉴2</li>
+                <li>메뉴3</li>
+            </ul>
+            <div class="submenu-container">
+                <ul>
+                    <li>서브메뉴1</li>
+                    <li>서브메뉴2</li>
+                    <li>서브메뉴3</li>
+                </ul>
+                <ul>
+                    <li>서브메뉴1</li>
+                    <li>서브메뉴2</li>
+                    <li>서브메뉴3</li>
+                </ul>
+                <ul>
+                    <li>서브메뉴1</li>
+                    <li>서브메뉴2</li>
+                    <li>서브메뉴3</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
