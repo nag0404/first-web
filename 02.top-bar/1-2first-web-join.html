@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./first-web.css">
+    <link rel="stylesheet" href="./1-2first-web-join.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="banner"><a href="./first-web.html">N I N D.</a></div>
+        <div class="banner"><a href="../01.main/first-web.html">N I N D.</a></div>
 
         <div class="top-bar">
-            <div class="login-box"><a href="../02.top-bar/1-1first-web-login.html">LOGIN</a></div>
-            <div class="join-box"><a href="../02.top-bar/1-2first-web-join.html">JOIN</a></div>
-            <div class="cart-box"><a href="../02.top-bar/1-3first-web-cart.html">CART</a></div>
-            <div class="mypage-box"><a href="../02.top-bar/1-4first-web-mypage.html">MY PAGE</a></div>
+            <div class="login-box"><a href="./1-1first-web-login.html">LOGIN</a></div>
+            <div class="join-box"><a href="./1-2first-web-join.html">JOIN</a></div>
+            <div class="cart-box"><a href="./1-3first-web-cart.html">CART</a></div>
+            <div class="mypage-box"><a href="./1-4first-web-mypage.html">MY PAGE</a></div>
         </div>
         <div class="nav">
             <ul class="nav-bar">
@@ -75,7 +75,33 @@
             </li>
         </div>
 
-        <div class="mainpic"><img src="../images/main02.jpg" class="main-img"></div>
+        <form class="join-form">
+            <div class="div-joinid">
+                <div class="text-id">아이디</div>
+                <input type="text" class="id" placeholder="ID는 영문 대소문자/숫자. 4-16자">
+            </div>
+            <div class="div-joinid">
+                <div class="text-pw">비밀번호</div>
+                <input type="password" class="pw" placeholder="영문 대소문자/숫자/특수문자 중 2가지 이상 조합. 8자-16자">
+            </div>
+            <div class="div-joinid">
+                <div class="text-pwok">비밀번호 확인</div>
+                <input type="password" class="pwok" placeholder="비밀번호를 확인 해 주시기 바랍니다.">
+            </div>
+            <div class="div-joinid">
+                <div class="text-name">이름</div>
+                <input type="text" class="name" placeholder="이름을 입력해주세요.">
+            </div>
+            <div class="div-joinid">
+                <div class="text-tel">전화번호</div>
+                <input type="tel" class="tel" placeholder="010-1234-5678">
+            </div>
+            <div class="div-joinid">
+                <div class="text-email">email</div>
+                <input type="email" class="email" placeholder="이메일을 입력해주세요.">
+            </div>
+            <button type="submit" class="join-btn">JOIN</button>
+        </form>
 
         <button id="scrollTopBtn">↑</button>
 
@@ -93,7 +119,7 @@
                 <br>EMAIL : 981026_ng@naver.com COPYRIGHT 김규빈
             </p>
         </div>
-        <script src="../01.main/first-web.js"></script>
+        <script src="./1-2first-web-join.js"></script>
 </body>
 
 </html>
