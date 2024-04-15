@@ -120,14 +120,10 @@ ul.nav-bar > li > ul > li > a:hover {
 }
 
 /* ----메인 페이지 메인사진 속성---- */
-.mainpic {
+.main-img {
     margin: 0 auto;
     display: flex;
     width: 50%;
-}
-
-.main img {
-    width: 100%;
 }
 
 /* ----하단 컨텐츠 영역 속성---- */
@@ -174,22 +170,157 @@ ul.nav-bar > li > ul > li > a:hover {
 /*----상품리스트 페이지 속성----*/
 .content {
     width: 100%;
-    margin: 30px;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
 }
 
-.content p {
+.img {
+    width: 40%;
+}
+
+.img img {
+    width: 100%;
+}
+
+.text {
+    width: 50%;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.price {
+    margin-left: 5%;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+#option-sel {
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+
+.color {
+    width: 30%;
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+    margin-left: 5%;
+}
+
+.color-sel { 
+    width: 60%;
+    font-size: 0.7rem;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #424242;
+}
+
+.buy-btn {
+    width: 100%;
+    padding: 10px;
+    background-color:black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+button:hover {
+    background-color: rgb(42, 42, 42);
+}
+
+.plus-content {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.plus-text {
     display: flex;
     justify-content: center;
 }
 
-.content-img{
-    width: 30%;
-    margin-bottom: 20px;
+.closet-img img{
+    height: 100px;
+    margin: 5px 5px;
 }
 
-.content-img img{
+.closet-img {
+    border: 1px solid #ccc;
+}
+
+.closet {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-con{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+.main-con img{
     width: 100%;
+}
+
+.comment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.mid-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 10%;
+}
+
+.info, .guide, .review, .qna {
+    border: 1px solid #ccc;
+    width: 25%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+#guide {
+    border: 1px solid #ccc;
+    width: 80%;
+    margin: 0 10%;
+    margin-bottom: 100px;
+}
+
+#guide-title {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    color: #767676;
+}
+
+#guide-com {
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+}
+
+#review {
+    width: 80%;
+    margin: 0 10%;
+    border: 1px solid #ccc;
 }
