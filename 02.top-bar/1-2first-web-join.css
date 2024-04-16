@@ -160,6 +160,11 @@ a {text-decoration: none; color: black;}
     border-radius: 5px;
 }
 
+.join-form {
+    width: 80%;
+    margin: 0 10%;
+}
+
 .join-form button {
     width: 100%;
     padding: 10px;

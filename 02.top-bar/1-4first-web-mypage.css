@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .nav {
     display: flex;
     align-items: center;
@@ -23,36 +24,36 @@ ul.nav-bar {
     padding: 0;
 }
 
-ul.nav-bar > li {
+ul.nav-bar>li {
     display: inline-block;
     margin-right: 80px;
 }
 
-ul.nav-bar > li > ul {
-    display: none; 
+ul.nav-bar>li>ul {
+    display: none;
     position: absolute;
-    background-color: #fff; 
+    background-color: #fff;
     padding: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
-ul.nav-bar > li:hover > ul {
-    display: block; 
-}
-
-ul.nav-bar > li > ul > li {
+ul.nav-bar>li:hover>ul {
     display: block;
 }
 
-ul.nav-bar > li > ul > li > a {
+ul.nav-bar>li>ul>li {
+    display: block;
+}
+
+ul.nav-bar>li>ul>li>a {
     display: block;
     padding: 8px 16px;
     text-decoration: none;
-    color: #000; 
+    color: #000;
 }
 
-ul.nav-bar > li > ul > li > a:hover {
-    background-color: #ddd; 
+ul.nav-bar>li>ul>li>a:hover {
+    background-color: #ddd;
 }
 
 /* ----상단배너---- */
@@ -72,7 +73,10 @@ ul.nav-bar > li > ul > li > a:hover {
 }
 
 /* ----a태그 속성---- */
-a {text-decoration: none; color: black;}
+a {
+    text-decoration: none;
+    color: black;
+}
 
 /* ----상단바 속성---- */
 .top-bar {
@@ -84,15 +88,19 @@ a {text-decoration: none; color: black;}
     top: 100px;
     height: 50px;
 }
+
 .login-box {
     margin: 15px;
 }
+
 .join-box {
     margin: 15px;
 }
+
 .cart-box {
     margin: 15px;
 }
+
 .mypage-box {
     margin: 15px;
 }
@@ -112,7 +120,13 @@ a {text-decoration: none; color: black;}
     margin-bottom: 50px;
 }
 
-.best-kate, .all-kate, .outer-kate, .top-kate, .shirt-kate, .bottom-kate, .shoes-kate {
+.best-kate,
+.all-kate,
+.outer-kate,
+.top-kate,
+.shirt-kate,
+.bottom-kate,
+.shoes-kate {
     margin: 10px 0px;
     margin-left: 30px;
 }
@@ -145,14 +159,24 @@ a {text-decoration: none; color: black;}
     display: flex;
 }
 
-.text-id, .text-pw, .text-pwok, .text-name, .text-tel, .text-email {
+.text-id,
+.text-pw,
+.text-pwok,
+.text-name,
+.text-tel,
+.text-email {
     margin-left: 20px;
     width: 20%;
     height: 20px;
     font-size: 0.8rem;
 }
 
-.id, .pw, .pwok , .name, .tel, .email{
+.id,
+.pw,
+.pwok,
+.name,
+.tel,
+.email {
     width: 70%;
     height: 20px;
     display: flex;
@@ -163,7 +187,7 @@ a {text-decoration: none; color: black;}
 .join-form button {
     width: 100%;
     padding: 10px;
-    background-color:white;
+    background-color: white;
     color: #000000;
     border: none;
     border-radius: 3px;
@@ -200,4 +224,87 @@ a {text-decoration: none; color: black;}
 
 #scrollTopBtn:hover {
     background-color: #384452;
+}
+
+.mypagetitle {
+    width: 80%;
+    margin: 0 10%;
+    border-top: 1px solid black;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagetop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+    color: #707070;
+    font-size: 0.8rem;
+    height: 50px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.mypagebox {
+    width: 80%;
+    margin: 0px 10%;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.mypagebox p:hover {
+    cursor: pointer;
+}
+
+.menu1 ,.menu2 ,.menu3, .menu4, .menu5 {
+    text-align: center;
+}
+
+.mypage-bottom {
+    width: 80%;
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    border-bottom: 1px solid black;
+}
+
+.mypage-bottom p:hover {
+    cursor: pointer;
+}
+
+.pagecoupon, .pagepoint{
+    text-align: center;
+}
+
+.mypagemenu {
+    width: 80%;
+    margin: 0 10%;
+    margin-top: 50px;
+    display: flex;
+    font-size: 0.8rem;
+}
+
+.box {
+    width: 16%;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 5px;
+    padding: 20px;
+}
+
+.box:hover{
+    cursor: pointer;
+}
+
+.mypagecontainer {
+    margin-bottom: 500px;
 }
