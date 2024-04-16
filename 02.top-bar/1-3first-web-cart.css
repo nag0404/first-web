@@ -201,3 +201,58 @@ a {text-decoration: none; color: black;}
 #scrollTopBtn:hover {
     background-color: #384452;
 }
+
+.container-cart {
+    width: 80%;
+    margin: 0 10%;
+    margin-bottom: 80px;
+}
+
+table {
+    width: 100%;
+}
+
+table , th , td {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+table p{
+    font-size: 0.8rem;
+    color: #7f7f7f;
+}
+
+.total-box {
+    width: 80%;
+    margin: 0 10%;
+}
+
+table , th , td {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+
+.btn-box {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.paybox {
+    width: 360px;
+    height: 40px;
+    border-radius: 100px;
+}
+
+.paybox:hover {
+    cursor: pointer;
+}
+
