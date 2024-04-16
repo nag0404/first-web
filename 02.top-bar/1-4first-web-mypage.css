@@ -17,6 +17,7 @@
 ul.nav-bar {
     list-style: none;
     padding: 0;
+    margin: 0 auto;
 }
 
 ul.nav-bar {
@@ -24,36 +25,36 @@ ul.nav-bar {
     padding: 0;
 }
 
-ul.nav-bar>li {
+ul.nav-bar > li {
     display: inline-block;
-    margin-right: 80px;
+    margin: 0 40px;
 }
 
-ul.nav-bar>li>ul {
-    display: none;
+ul.nav-bar > li > ul {
+    display: none; 
     position: absolute;
-    background-color: #fff;
+    background-color: #fff; 
     padding: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
 }
 
-ul.nav-bar>li:hover>ul {
+ul.nav-bar > li:hover > ul {
+    display: block; 
+}
+
+ul.nav-bar > li > ul > li {
     display: block;
 }
 
-ul.nav-bar>li>ul>li {
-    display: block;
-}
-
-ul.nav-bar>li>ul>li>a {
+ul.nav-bar > li > ul > li > a {
     display: block;
     padding: 8px 16px;
     text-decoration: none;
-    color: #000;
+    color: #000; 
 }
 
-ul.nav-bar>li>ul>li>a:hover {
-    background-color: #ddd;
+ul.nav-bar > li > ul > li > a:hover {
+    background-color: #ddd; 
 }
 
 /* ----상단배너---- */

@@ -35,5 +35,3 @@ document.getElementById("pw").addEventListener("keydown", function(event) {
         document.getElementById("login-btn").click();
     }
 });
-
-/*----회원가입창 자바스크립트----*/
