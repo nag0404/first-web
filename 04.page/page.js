@@ -25,11 +25,11 @@ function scrollToGuide() {
 }
 
 function scrollToReview() {
-    let contentElement = document.querySelector('.info');
+    let contentElement = document.querySelector('#review');
     contentElement.scrollIntoView({ behavior: 'smooth' });
 }
 
 function scrollToQna() {
-    let contentElement = document.querySelector('.review');
+    let contentElement = document.querySelector('.qnacontainer');
     contentElement.scrollIntoView({ behavior: 'smooth' });
 }
